@@ -1,87 +1,198 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+body {
+	background-color: #383737;
+	color: white;
 }
-
-p {
-  line-height: 2rem;
+.bg-first {
+	background-image: url(../background3.jpg);
+	background-size: cover;
+	height: 630px;
 }
-
-.sidenav-trigger {
-  color: #26a69a;
+.nav-link {
+	color: white !important;
 }
-
-.parallax-container {
-  min-height: 300px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-.display-1 {
-  margin-top: 80px;
+.display-4 {
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+	margin-top: 52%;
+	font-size: 100px;
 }
 .lead {
-  margin-bottom: 100px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
 }
-.parallax-container .section {
-  width: 100%;
+.service h3 {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-top: -7%;
+}
+.uiux,
+.photographer {
+	background-color: #383737;
+	border-radius: 12px;
+	border: solid 1px white;
+	height: 80px;
+}
+.uiux h3 {
+	color: white;
+	font-size: 30px;
+	font-weight: lighter;
+}
+.uiux h4{
+	color: white;
+	font-size: 19px;
+	text-align: center;
+	font-weight: bolder;
+	margin-top: -40px !important;
+}
+.photographer i {
+	font-size: 30px;
+	color: white;
+	margin-top: -5px;
+	display: flex;
+	justify-content: center;
+}
+.photographer h4 {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin-top: -5px;
+	font-weight: bolder;
+}
+.project h4 {
+	text-align: center;
+	padding-top: 15px;
+	margin-bottom: -25px;
+	font-weight: bolder;
+}
+.profile-img {
+	width: 45%;
+	margin-left: 28%;
+}
+.lead-2 {
+	font-size: 15px;
+	margin-top: 1%;
+	text-align: center;
 }
 
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+/*utility*/
+.arrow {
+	color: white;
+	text-align: center;
+}
+.navbar {
+	transition: 0.5s;
+}
+.navblack {
+	background-color: rgba(0,0,0, 0.5);
+}
+.card {
+	background-color: unset;
+	border: unset;
+}
+.btn-main {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	background-color: red;
+}
+.btn-main:hover {
+	background-color: orange;
+	color: white;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+.plink {
+	background-color: orange;
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+.current h4 {
+	text-align: center;
+}
+.list-done-projects {
+	background-color: orange;
+}
+.about h4 {
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 15px;
+}
+.profile-img {
+	border-radius: 320px;
+}
+.progres {
+	margin-top: -30px !important;
+}
+.progression-bar {
+	margin-top: -14px;
+}
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.display-4 {
+		margin-top: 15%;
+	}	
+	.service h3 {
+		margin-top: -2%;
+	}
+	.uiux h3 {
+		font-size: 80px;
+		font-weight: lighter;
+	}
+	.uiux h4{
+		font-size: 50px;
+		margin-top: -45px !important;
+	}
+	.photographer i {
+		font-size: 85px;
+	}
+	.photographer h4 {
+		font-size: 48px;
+		margin-top: -10px;
+	}
+	.uiux,
+	.photographer {
+		background-color: #383737;
+		border-radius: 12px;
+		border: solid 1px white;
+		height: 170px;
+	}
+	.profile-img {
+		margin-right: 5%;
+		margin-left: 5%;
+		float: left;
+	}
+	.lead-2 {
+		margin-top: 3%;
+		padding-left:  155px !important;
+		width: 1050px;
+		text-align: left;
+		font-size: 22px;
+	}
+	.profile-img {
+		border-radius: 320px;
+		width: 15%;
+	}
 }
 
-.icon-block {
-  padding: 0 15px;
+.html-progres {
+	margin-top: -4%;
+	width: 95%;
+	height: 20px;
+	background-color: cyan;
 }
-.icon-block .material-icons {
-  font-size: inherit;
+.ci-progres {
+	margin-top: -4%;
+	width: 65%;
+	height: 20px;
+	background-color: cyan;
 }
-
-footer.page-footer {
-  margin: 0;
-}
-.bg-sd {
-  background-color: rgba(0,0,0, 0.3)
-}
-.sample {
-  background-color: teal;
-  color: white;
-}
-.img-sample {
-  width: 100%;
-}
-.btn-act {
-  border-radius: 50px;
-  margin-top: 3px;
-  width: 100%;
-}
-.sample-text {
-  color: white;
-  text-align: center;
-  font-weight: 900;
-}
-.p-icon {
-  width: 35px;
+.laravel-progres {
+	margin-top: -4%;
+	width: 10%;
+	height: 20px;
+	background-color: cyan;
 }
