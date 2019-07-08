@@ -76,7 +76,19 @@ body {
 	margin-top: 1%;
 	text-align: center;
 }
-
+.sosial-icn {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+.app-icn {
+	display: flex;
+	justify-content: center;
+}
+.icons-app {
+	width: 40px;
+	margin: 0 10px;
+}
 /*utility*/
 .arrow {
 	color: white;
@@ -86,7 +98,7 @@ body {
 	transition: 0.5s;
 }
 .navblack {
-	background-color: rgba(0,0,0, 0.5);
+	background-color: rgba(0,0,0, 0.8);
 }
 .card {
 	background-color: unset;
@@ -130,6 +142,10 @@ body {
 .progression-bar {
 	margin-top: -14px;
 }
+.icons {
+	width: 27px;
+	margin-right: 10px;
+}
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 	.display-4 {
@@ -166,7 +182,7 @@ body {
 		float: left;
 	}
 	.lead-2 {
-		margin-top: 3%;
+		margin-top: 2%;
 		padding-left:  155px !important;
 		width: 1050px;
 		text-align: left;
@@ -175,6 +191,15 @@ body {
 	.profile-img {
 		border-radius: 320px;
 		width: 15%;
+	}
+	.sosial-icn {
+		display: flex;
+		justify-content: left;
+		margin-bottom: 5%;
+	}
+	.icons-app {
+		width: 55px;
+		margin: 30px 10px;
 	}
 }
 
