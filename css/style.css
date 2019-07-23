@@ -1,11 +1,18 @@
 body {
 	background-color: #383737;
 	color: white;
+	margin: 0;
+	padding: 0;
 }
-.bg-first {
-	background-image: url(../background3.jpg);
-	background-size: cover;
-	height: 630px;
+.container {
+	position: relative;
+}
+.bg-first img {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 .nav-link {
 	color: white !important;
@@ -26,11 +33,9 @@ body {
 	text-align: center;
 	color: white;
 	font-weight: bold;
-	margin-top: -7%;
 }
 .uiux,
 .photographer {
-	background-color: #383737;
 	border-radius: 12px;
 	border: solid 1px white;
 	height: 80px;
@@ -89,6 +94,7 @@ body {
 	width: 40px;
 	margin: 0 10px;
 }
+
 /*utility*/
 .arrow {
 	color: white;
@@ -152,9 +158,10 @@ body {
 		margin-top: 15%;
 	}	
 	.service h3 {
-		margin-top: -2%;
+/*		margin-top: 36vh;*/
 	}
 	.uiux h3 {
+		margin-top: -3%;
 		font-size: 80px;
 		font-weight: lighter;
 	}
@@ -171,7 +178,6 @@ body {
 	}
 	.uiux,
 	.photographer {
-		background-color: #383737;
 		border-radius: 12px;
 		border: solid 1px white;
 		height: 170px;
@@ -201,6 +207,18 @@ body {
 		width: 55px;
 		margin: 30px 10px;
 	}
+	.btn {
+		width: 40%;
+	}
+}
+.btn:hover {
+	border-radius: unset;
+	width: 90%;
+}
+.btn {
+	border-radius: 100px;
+	transition: 0.4s;
+	margin: auto;; 
 }
 
 .html-progres {
