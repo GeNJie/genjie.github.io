@@ -17,12 +17,18 @@ body {
 .nav-link {
 	color: white !important;
 }
+.landing {
+	position: fixed;
+	z-index: 5;
+	top: 40%;
+	animation: display-4 3.1s ease;
+}
 .display-4 {
 	text-align: center;
 	font-weight: bolder;
 	color: white;
-	margin-top: 52%;
 	font-size: 100px;
+	text-align: center;
 }
 .lead {
 	color: white;
@@ -44,6 +50,7 @@ body {
 	color: white;
 	font-size: 30px;
 	font-weight: lighter;
+	margin-top: -10%;
 }
 .uiux h4{
 	color: white;
@@ -51,6 +58,12 @@ body {
 	text-align: center;
 	font-weight: bolder;
 	margin-top: -40px !important;
+}
+.photographer {
+	transition: 0.5s;
+}
+.photographer:hover {
+	background-color: red;
 }
 .photographer i {
 	font-size: 30px;
@@ -94,8 +107,18 @@ body {
 	width: 40px;
 	margin: 0 10px;
 }
+.main {
+	margin-top: 100vh;
+}
 
 /*utility*/
+.line-01 {
+	z-index: 5;
+	margin-top: 50% !important;
+	height: 10% !important;
+	width: 20% !important;
+	background-color: white !important;
+}
 .arrow {
 	color: white;
 	text-align: center;
@@ -152,11 +175,38 @@ body {
 	width: 27px;
 	margin-right: 10px;
 }
+.main {
+	position: relative;
+	z-index: 10;
+	padding-top: 1%;
+	transition: 1s;
+}
+.main-black {
+	background-color: rgba(0,0,0, 0.9) !important;
+}
+.modal-content {
+	background-color: black;
+}
+.dropdown-menu {
+	background-color: rgba(0,0,0, 0.7) !important;
+}
+.dropdown-item {
+	color: white !important;
+}
+.dropdown-item:hover {
+	color: white !important;
+	background-color: rgba(0,0,0, 0.4);
+}
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 	.display-4 {
-		margin-top: 15%;
-	}	
+		text-align: center;
+		margin-left: -30vh;
+	}
+	.lead {
+		text-align: right;
+		margin-right: 10vh;
+	}
 	.service h3 {
 /*		margin-top: 36vh;*/
 	}
@@ -210,6 +260,19 @@ body {
 	.btn {
 		width: 40%;
 	}
+	.main {
+		margin-top: 100vh !important;
+	}
+	.nav-link {
+		transition: 0.5s;
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: solid 3px blue;
+		width: 50%;
+		margin: auto;
+	}	
 }
 .btn:hover {
 	border-radius: unset;
@@ -235,7 +298,21 @@ body {
 }
 .laravel-progres {
 	margin-top: -4%;
+	width: 25%;
+	height: 20px;
+	background-color: cyan;
+}
+.python-progres {
+	margin-top: -4%;
 	width: 10%;
 	height: 20px;
 	background-color: cyan;
+}
+
+@keyframes display-4 {
+	from{
+		opacity: 0;
+	}to{
+		opacity: 1;
+	}
 }
